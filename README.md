@@ -1,5 +1,4 @@
-# GrafanaDockerRunForBeckhoffHMIiFrame
-Grafana Docker Run for Beckhoff HMI iFrame
+# Grafana Docker in Beckhoff HMI iFrame
 
 for HTTP simply run:
 `docker run -d -e "GF_PANELS_DISABLE_SANITIZE_HTML=true" -e "GF_SECURITY_ALLOW_EMBEDDING=true" -e "GF_AUTH_ANONYMOUS_ENABLED=true" -e "GF_AUTH_ANONYMOUS_ORG_NAME=Main Org." -e "GF_SERVER_SERVE_FROM_SUB_PATH=true" -e "GF_AUTH_JWT_AUTO_SIGN_UP=true" -p 3000:3000 --name=grafana --restart=always -v grafana_volume:/var/lib/grafana grafana/grafana-enterprise`
